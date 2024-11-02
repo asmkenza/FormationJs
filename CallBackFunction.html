@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack Function</title>
+</head>
+<body>
+
+<p>Les fonctions CallBack sont des fonctions qui sont appellées à l'interieur d'une autre fonction comme parametre</p>
+<p> Le résultat de calcul est : </p>
+<p id="demo"></p>
+
+<script>
+
+function myDisplayer(X){  document.getElementById("demo").innerHTML=X;  }
+
+function myCalculator(num1,num2,myCallBack){
+    let somme=num1+num2; 
+    myCallBack(somme);
+}
+
+myCalculator(10,7,myDisplayer);
+
+</script>
+</body>
+</html>

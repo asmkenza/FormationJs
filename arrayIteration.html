@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Iteration</title>
+</head>
+<body>
+
+    <h1>JavaScript arrays iteration</h1>
+
+    <script>
+
+    // const numbers=[17,27,37,47,57];
+
+    // function double(num){  console.log("Function forEach", num*2);  }
+
+    // numbers.forEach(double);
+
+
+
+
+    // const nums=[1,2,3,4,5];
+
+    // function triple(num){
+    //     return num*3;
+    // }
+
+    // const tripledNums= nums.map(triple); // elle retourne un tableau en multipliant chacun de ses éléments
+
+    // console.log("Fonction map",tripledNums);
+
+
+
+
+
+    // const nombres=[1,2,3,4,5,6];
+    // const evenNumbers= nombres.filter((num)=>num%2===0);
+    // console.log("Fonction filter",evenNumbers);
+
+
+
+    // Réduction du tableau à un seul résultat
+//   const nombres2=[1,2,3,4,5];
+//   const somme= nombres2.reduce((accumulator, currentValue)=>(accumulator+currentValue),1);
+//   console.log(somme); 
+
+
+
+
+
+// elle vérifie est ce que chaque element du tableau vérifie et satisfait la condition
+// const nombres3=[2,4,6,8,10]; 
+// const alleven=nombres3.every((num)=>num%2===0);
+// console.log(alleven,"Fonction every");
+
+
+
+// const fruits=["Pomme","Banane","Orange","Fraise"]; 
+// const indexOfElement=fruits.indexOf("Orange"); // retourne l'index de l'élément , si l'élément n'existe pas elle retourne -1
+// console.log(indexOfElement); 
+
+// const result=fruits.find((fruit)=>fruit.length>5); 
+// console.log(result); // retourne le premier élément qui vérifie et satisfait la condition
+
+
+
+
+const numbers4=[10,20,30,40,50];
+const index=numbers4.findIndex((num)=>num>25); // retourne l'index du premier élément qui vérifie et satisfait la condition
+console.log("L'index : ",index);
+
+
+</script>
+
+</body>
+</html>
